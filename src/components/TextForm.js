@@ -35,11 +35,12 @@ export default function TextForm(props) {
     }
 
     const handleOnChange = (event) => {
-        // console.log("On Change");
+        
         setText(event.target.value);
     }
 
     const [text, setText] = useState("Enter Text Here.");
+    console.log(props.mode);
 
     return (
         <>
